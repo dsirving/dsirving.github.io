@@ -1,0 +1,286 @@
+body{
+    background-color: #212121;
+    font-family: helvetica, sans-serif;
+    color: white;
+}
+
+.nav a.link:link{
+    color: white;
+    outline: none;
+    text-decoration: none;
+}
+
+.nav a.link:visited{
+    color: white;
+}
+
+.nav a.link:hover{
+    background-color: #2f2f2f;
+    padding-top: 4px;
+}
+
+.nav a.link:active{
+    background-color: black;
+}
+
+
+h2 a.link:link {
+    padding-left: 12px;
+}
+
+h2 a.link:hover{
+    padding: 4px 5px 4px;
+}
+
+.button1 {
+    padding: 5px;
+    font-size: 1em;
+    margin-left: 20px;
+    border-radius: 6px;
+    color: white;
+    border-color: white;
+    background-color: black;
+}
+
+.button2 {
+    padding: 5px;
+    font-size: 1em;
+    margin-left: 20px;
+    border-radius: 6px;
+    color: white;
+    border-color: white;
+    background-color: black;
+}
+
+.button3 {
+    padding: 5px;
+    font-size: 1em;
+    margin-left: 20px;
+    border-radius: 6px;
+    color: white;
+    border-color: white;
+    background-color: black;
+}
+
+.nav {
+    background-color: black;
+    object-position: center;
+    margin: auto;
+}
+
+.container {
+    display: flex;
+    flex-flow: column;
+    order: 1;
+    background-color: black;
+    height: 8vw;
+    border-radius: 1em;
+}
+
+.nav h1 {
+    display: inline-block;
+    order: 1;
+}
+
+.nav h2 {
+    display: inline-block;
+    padding-left: 5vw;
+    order: 2;
+}
+
+.nav .button-container {
+    display: inline-block;
+    order: 3;
+    padding-left: 10vw;
+}
+
+label {
+    font-size: 4em;
+    background-color: black;
+    text-decoration: 4px underline;
+    color: white;
+}
+
+form {
+    background-color: black;
+}
+
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 5px solid white;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 1.5em;
+    resize: vertical;
+    font-size: 4em;
+}
+
+input[type=submit] {
+    margin-top: 0.25em;
+    background-color: #0077ff;
+    color: #212121;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 0.15em;
+    cursor: pointer;
+    font-size: 4em;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.flex-container div {
+    width: inherit;
+    margin-top: 4em;
+    margin-bottom: 4em;
+
+}
+
+.flex-container{
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1em;
+}
+
+@media screen and (min-width: 1000px){
+    input[type=text], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        font-size: 2em;
+        resize: vertical
+    }
+
+    input[type=submit] {
+        background-color: #0077ff;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 2em;
+    }
+
+    input[type=submit]:hover {
+        background-color: #45a049;
+    }
+
+    .flex-container div {
+        width: 800px;
+        height: auto;
+    }
+
+    .flex-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    label {
+        font-size: 2em;
+        text-decoration: 4px underline;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+
+    .container{
+        display: flex;
+        flex-flow: column;
+        order: 1;
+        height: auto;
+        width: 10vw;
+        padding-left: 0.5vw;
+    }
+
+    .nav{
+        background-color: black;
+        width: 13vw;
+        position: fixed;
+        height: 98%;
+        padding: 0 0 0 0;
+        border-radius: 1em;
+    }
+
+    .nav h1 {
+        display: block;
+        order: 1;
+        padding: 0 0 0 0;
+        flex-shrink: inherit;
+    }
+
+    .nav h2 {
+        display: block;
+        order: 2;
+        padding: 0 0 0 0;
+        flex-shrink: inherit;
+    }
+
+    .nav .button-container{
+        display: block;
+        order: 3;
+        padding: 0 0 0 0;
+        flex-shrink: inherit;
+    }
+
+    input[type=text], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        font-size: 1.5em;
+        resize: vertical
+    }
+
+    input[type=submit] {
+        background-color: #0077ff;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 1.5em;
+    }
+
+    input[type=submit]:hover {
+        background-color: #45a049;
+    }
+
+    .flex-container div {
+        width: 48em;
+        height: auto;
+    }
+
+    .flex-container{
+        margin-top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    label {
+        font-size: 1.5em;
+        text-decoration: 2px underline;
+    }
+}

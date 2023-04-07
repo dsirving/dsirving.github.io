@@ -1,0 +1,256 @@
+body{
+    background-color: #b6b6b6;
+    font-family: helvetica, sans-serif;
+}
+
+a.link:link{
+    color: black;
+    outline: none;
+    text-decoration: none;
+}
+
+a.link:visited{
+    color: black;
+}
+
+a.link:hover{
+    background-color: black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+a.link:active{
+    background-color: black;
+}
+
+.button1 {
+    padding: 5px;
+    font-size: 1em;
+    margin-left: 20px;
+    border-radius: 6px;
+    color: black;
+    border-color: black;
+    background-color: white;
+}
+
+.button2 {
+    padding: 5px;
+    font-size: 1em;
+    margin-left: 20px;
+    border-radius: 6px;
+    color: black;
+    border-color: black;
+    background-color: white;
+}
+
+.button3 {
+    padding: 5px;
+    font-size: 1em;
+    margin-left: 20px;
+    border-radius: 6px;
+    color: black;
+    border-color: black;
+    background-color: white;
+}
+
+.photos1{
+    display: flex;
+    justify-content: center;
+}
+
+.photos2{
+    display: flex;
+    justify-content: center;
+}
+
+.photos3{
+    display: flex;
+    justify-content: center;
+}
+
+.photos4{
+    display: flex;
+    justify-content: center;
+}
+
+.nav {
+    object-position: center;
+    justify-content: center;
+    align-self: center;
+    width: 100%;
+    margin: 0 1em 0;
+}
+
+.nav h1 {
+    display: inline-block;
+    order: 1;
+    padding-left: 0.5em;
+    border-radius: 1em;
+}
+
+.nav h2 {
+    display: inline-block;
+    padding-left: 3.9vw;
+    order: 2;
+}
+
+.nav .button-container {
+    display: inline-block;
+    order: 3;
+    padding-left: 10vw;
+}
+
+.container {
+    display: flex;
+    flex-flow: row;
+    order: 1;
+    background-color: white;
+    height: 8vw;
+    margin-bottom: 0.5em;
+    border-radius: 1em;
+}
+
+img{
+    max-width: 50%;
+    padding: 1px;
+}
+
+
+@media screen and (min-width: 1000px){
+    img{
+        max-width: 50%;
+        padding: 1px;
+    }
+
+    .photos1{
+        display: flex;
+        justify-content: center;
+    }
+
+    .photos2{
+        display: flex;
+        justify-content: center;
+    }
+
+    .photos3{
+        display: flex;
+        justify-content: center;
+    }
+
+    .photos4{
+        display: flex;
+        justify-content: center;
+    }
+
+    h2 a.link:link {
+        padding-left: 12px;
+    }
+
+    h2 a.link:hover{
+        padding: 4px 5px 4px;
+    }
+
+    .nav {
+        object-position: center;
+        justify-content: center;
+        align-self: center;
+        margin: auto;
+        border-radius: 1em;
+    }
+
+    .nav h1 {
+        display: inline-block;
+        order: 1;
+    }
+
+    .nav h2 {
+        display: inline-block;
+        order: 2;
+    }
+
+    .nav .button-container {
+        display: inline-block;
+        order: 3;
+        padding-left: 10vw;
+    }
+
+    .container {
+        display: flex;
+        flex-flow: row;
+        order: 1;
+        background-color: white;
+        height: 8vw;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+
+    .container{
+        display: flex;
+        flex-flow: column;
+        height: auto;
+        width: 10vw;
+        padding-left: 2vw;
+        border-radius: 1em;
+        background-color: white;
+    }
+
+    .nav{
+        width: 13vw;
+        position: fixed;
+        height: 98%;
+        padding: 0 0 0 0;
+        border-radius: 1em;
+        background-color: white;
+    }
+
+    .nav h1 {
+        display: block;
+        order: 1;
+        padding: 0 0 0 0;
+        flex-shrink: inherit;
+    }
+
+    .nav h2 {
+        display: block;
+        order: 2;
+        padding: 0 0 0 0;
+        flex-shrink: inherit;
+    }
+
+    .nav .button-container{
+        display: block;
+        order: 3;
+        padding: 0 0 0 0;
+        flex-shrink: inherit;
+    }
+
+    img{
+        max-width: 42vw;
+        padding: 1px;
+    }
+
+    .photos1{
+        display: flex;
+        justify-content: right;
+        padding-right: 1%;
+    }
+
+    .photos2{
+        display: flex;
+        justify-content: right;
+        padding-right: 1%;
+    }
+
+    .photos3{
+        display: flex;
+        justify-content: right;
+        padding-right: 1%;
+    }
+
+    .photos4{
+        display: flex;
+        justify-content: right;
+        padding-right: 1%;
+    }
+}

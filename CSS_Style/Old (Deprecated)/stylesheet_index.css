@@ -1,0 +1,46 @@
+*{
+    background-color: #2f2f2f;
+    font-family: helvetica, sans-serif;
+    color: white;
+}
+
+img{
+    width: 86vw;
+    height: auto;
+    padding-left: 1px;
+    grid-area: photo;
+    border: solid black;
+}
+
+.nav{
+    background-color: #2f2f2f;
+    grid-area: nav;
+    grid-row: 1;
+    grid-template-columns: auto;
+    width: 13vw;
+    object-position: left;
+
+}
+
+.grid-container{
+    display: grid;
+    grid-template-areas: "nav photo photo photo";
+}
+
+.button1 {
+    padding: 5px;
+    font-size: 1em;
+    margin-left: 20px;
+}
+
+.button2 {
+    padding: 5px;
+    font-size: 1em;
+    margin-left: 20px;
+}
+
+.button3 {
+    padding: 5px;
+    font-size: 1em;
+    margin-left: 20px;
+}

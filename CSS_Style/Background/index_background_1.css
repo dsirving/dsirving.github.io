@@ -1,0 +1,24 @@
+body {
+    background-image: url(Index_1_mobile.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+@media screen and (min-width: 1000px) {
+    body {
+        background-image: url(Index_1_tablet.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    body {
+        background-image: url(Index_1.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+}

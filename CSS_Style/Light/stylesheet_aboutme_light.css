@@ -1,0 +1,289 @@
+body{
+    background-color: #b6b6b6;
+    font-family: helvetica, sans-serif;
+    color: black;
+}
+
+.nav a.link:link{
+    color: black;
+    outline: none;
+    text-decoration: none;
+}
+
+h2 a.link:link {
+    padding-left: 12px;
+}
+
+h2 a.link:hover{
+    padding: 4px 5px 4px;
+}
+
+.nav a.link:visited{
+    color: black;
+}
+
+a:link{
+    color: black;
+}
+
+.nav a.link:hover{
+    background-color: #b6b6b6;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.nav a.link:active{
+    background-color: black;
+}
+
+h1{
+    color: black;
+}
+
+td {
+    background-color: white;
+}
+
+.info{
+    font-size: 3em;
+    color: black;
+}
+
+.social-links{
+    font-size: 4em;
+    padding-top: 0.5em;
+    color: black;
+    background-color: white;
+}
+
+.header1{
+    font-size: 8em;
+    text-decoration: underline;
+    color: black;
+}
+
+.header2{
+    font-size: 6em;
+    text-decoration: underline;
+    color: black;
+}
+
+.button1 {
+    padding: 5px;
+    font-size: 1em;
+    margin-left: 20px;
+    border-radius: 6px;
+    color: black;
+    border-color: black;
+    background-color: white;
+}
+
+.button2 {
+    padding: 5px;
+    font-size: 1em;
+    margin-left: 20px;
+    border-radius: 6px;
+    color: black;
+    border-color: black;
+    background-color: white;
+}
+
+.button3 {
+    padding: 5px;
+    font-size: 1em;
+    margin-left: 20px;
+    border-radius: 6px;
+    color: black;
+    border-color: black;
+    background-color: white;
+}
+
+.nav {
+    object-position: center;
+    justify-content: center;
+    align-self: center;
+    margin: auto;
+    display: inline-block;
+    background-color: white;
+    border-radius: 1em;
+}
+
+.nav h1 {
+    display: inline-block;
+    order: 1;
+}
+
+.nav h2 {
+    display: inline-block;
+    padding-left: 5vw;
+    order: 2;
+}
+
+.nav .button-container {
+    display: inline-block;
+    order: 3;
+    padding-left: 10vw;
+    background-color: white;
+}
+
+.container {
+    display: flex;
+    flex-flow: column;
+    order: 1;
+    height: 8vw;
+    background-color: white;
+    border-radius: 1em;
+}
+
+.flex-container {
+    margin-top: 2vh;
+    display: flex;
+    flex-flow: column;
+    order: 2;
+    justify-items: center;
+    margin-left: 5%;
+    padding: 5% 5% 5%;
+    width: 80%;
+    background-color: white;
+    border-radius: 1em;
+}
+
+img{
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    height: auto;
+    order: 2;
+    align-self: center;
+    background-color: white;
+}
+
+table{
+    padding-top: 2%;
+    width: 80%;
+    text-align: left;
+    padding-left: 2%;
+    flex-flow: column;
+    order: 3;
+    align-self: center;
+    background-color: white;
+}
+
+
+@media screen and (min-width: 1000px){
+    .flex-container {
+        padding-top: 2vh;
+        margin-top: 2vh;
+        display: flex;
+        flex-flow: row;
+        order: 2;
+        align-self: center;
+        width: 80%;
+        padding-bottom: 2vh;
+        background-color: white;
+    }
+
+    img{
+        padding-left: 8%;
+        width: 50%;
+        align-self: center;
+        background-color: white;
+    }
+
+    table{
+        padding-top: 2%;
+        width: 40%;
+        text-align: left;
+        padding-left: 2%;
+        background-color: white;
+    }
+
+    .info{
+        font-size: 1.5em;
+    }
+
+    .social-links{
+        font-size: 1.5em;
+        padding-top: 0.5em;
+    }
+
+    .header1{
+        font-size: 3em;
+        text-decoration: underline;
+    }
+
+    .header2{
+        font-size: 3em;
+        text-decoration: underline;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+
+    .container{
+        display: flex;
+        flex-flow: column;
+        order: 1;
+        height: auto;
+        width: 10vw;
+        padding-left: 2vw;
+    }
+
+    .nav{
+        background-color: white;
+        width: 13vw;
+        position: fixed;
+        height: 98%;
+        padding: 0 0 0 0;
+        border-radius: 1em;
+    }
+
+    .nav h1 {
+        display: block;
+        order: 1;
+        padding: 0 0 0 0;
+        flex-shrink: inherit;
+    }
+
+    .nav h2 {
+        display: block;
+        order: 2;
+        padding: 0 0 0 0;
+        flex-shrink: inherit;
+    }
+
+    .nav .button-container{
+        display: block;
+        order: 3;
+        padding: 0 0 0 0;
+        flex-shrink: inherit;
+        background-color: white;
+    }
+
+    .flex-container{
+        margin-top: 2vh;
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        margin-left: 20%;
+        width: 60%;
+        background-color: white;
+        padding-bottom: 5%;
+        padding-top: 5%;
+    }
+
+    img{
+        width: 40%;
+        height: auto;
+        background-color: white;
+    }
+
+    table{
+        padding-top: 2%;
+        width: 40%;
+        text-align: left;
+        padding-left: 2%;
+        background-color: white;
+    }
+}
+
